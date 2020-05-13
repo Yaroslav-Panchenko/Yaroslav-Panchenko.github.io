@@ -27,7 +27,7 @@ $(document).ready(function(){
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab-item_active)', function() {
       $(this)
         .addClass('catalog__tab-item_active').siblings().removeClass('catalog__tab-item_active')
-        .closest('section.gallary-years').find('ul.gallary-list').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
+        .closest('section.catalog').find('ul.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
     });
 
     // ------------------------Card slide------------
